@@ -129,7 +129,7 @@ function SongDatabase:new()
 				last_time = hit_object.Time
 				cur_nps = 0
 			end
-			cur_nps += 1
+			cur_nps = cur_nps + 1
 		end
 
 		return nps_graph
