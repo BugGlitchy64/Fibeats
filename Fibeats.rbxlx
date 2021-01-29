@@ -268,7 +268,7 @@ return GraphBase
 local MockDataStoreServiceModule = script.MockDataStoreService
 
 local shouldUseMock = false
-if game.GameId == 0 then -- Local place file
+if game.PlaceId == 0 then -- Local place file
 	shouldUseMock = true
 elseif game:GetService("RunService"):IsStudio() then -- Published file in Studio
 	local status, message = pcall(function()
@@ -1063,7 +1063,7 @@ local Constants = require(script.Parent.MockDataStoreConstants)
 local HttpService = game:GetService("HttpService") -- for json encode/decode
 local RunService = game:GetService("RunService")
 
-local rand = Random.new()
+local rand = random.new()
 
 local function shorten(s, num)
 	if #s > num then
@@ -7068,7 +7068,7 @@ function SongDatabase:new()
 				last_time = hit_object.Time
 				cur_nps = 0
 			end
-			cur_nps += 1
+			cur_nps = cur_nps + 1
 		end
 
 		return nps_graph
