@@ -1,48 +1,30 @@
 {
-	"name": "Fibeats",
-	"tree": {
-	  "$className": "DataModel",
-  
-	  "ReplicatedStorage": {
-		"$className": "ReplicatedStorage",
-		"$path": "src/shared"
-	  },
-  
-	  "ServerScriptService": {
-		"$className": "ServerScriptService",
-		"$path": "src/server"
-	  },
-  
-	  "StarterPlayer": {
-		"$className": "StarterPlayer",
-  
-		"StarterPlayerScripts": {
-		  "$className": "StarterPlayerScripts",
-  
-		  "Client": {
-			"$path": "src/client"
-		  }
-		}
-	  },
-  
-	  "Workspace": {
-		"$className": "Workspace",
-		"$properties": {
-		  "FilteringEnabled": true
-		},
-		"$path": "src/services/workspace"
-	  },
-	  "SoundService": {
-		"$className": "SoundService",
-		"$properties": {
-		  "RespectFilteringEnabled": true
-		}
-	  },
-	  "HttpService": {
-		"$className": "HttpService",
-		"$properties": {
-		  "HttpEnabled": true
-		}
-	  }
-	}
+  "name": "project",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage"
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ServerScriptService"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
+      },
+      "$ignoreUnknownInstances": true
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/Workspace"
+    }
   }
+}
